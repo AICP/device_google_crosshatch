@@ -31,11 +31,19 @@ $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
+# Screen Resolution for the Bootanimation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+
 PRODUCT_NAME := aicp_crosshatch
 PRODUCT_DEVICE := crosshatch
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
 PRODUCT_MANUFACTURER := Google
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Davor B (LorD ClockaN)"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=crosshatch \
