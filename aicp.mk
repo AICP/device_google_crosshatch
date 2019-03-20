@@ -18,11 +18,11 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps). Except for a few implementation
 # details, it only fundamentally contains two inherit-product
-# lines, aosp and du, hence its name.
+# lines, aosp , du and aicp, hence its name.
 #
 
-# Include DU common configuration
-include vendor/du/config/common_full_phone.mk
+# Include AICP common configuration
+include vendor/aicp/config/common_full_phone.mk
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
@@ -31,7 +31,7 @@ $(call inherit-product, device/google/crosshatch/aosp_crosshatch.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
-PRODUCT_NAME := du_crosshatch
+PRODUCT_NAME := aicp_crosshatch
 PRODUCT_DEVICE := crosshatch
 PRODUCT_BRAND := Google
 PRODUCT_MODEL := Pixel 3 XL
