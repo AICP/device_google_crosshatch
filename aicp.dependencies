@@ -1,0 +1,19 @@
+[
+  {
+    "repository": "android_kernel_google_crosshatch",
+    "target_path": "kernel/google/crosshatch"
+  }
+]
+
+[
+  {
+    "repository": "LineageOS/android_kernel_google_crosshatch",
+    "target_path": "kernel/google/crosshatch",
+    "branch": "lineage-16.0"
+  },
+  {
+    "repository": "TheMuppets/proprietary_vendor_google",
+    "target_path": "vendor/google",
+    "branch": "lineage-16.0"
+  }
+]
