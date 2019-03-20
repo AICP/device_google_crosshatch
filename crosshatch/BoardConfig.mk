@@ -15,7 +15,7 @@
 #
 
 # Allow Lineage config to override others
--include device/google/crosshatch/crosshatch/BoardConfigLineage.mk
+-include device/google/crosshatch/crosshatch/BoardConfigAicp.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := crosshatch
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 165
