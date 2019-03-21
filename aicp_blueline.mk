@@ -24,3 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/blueline/blueline:9/PQ2A.190305.002/5240760:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/crosshatch/crosshatch-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
